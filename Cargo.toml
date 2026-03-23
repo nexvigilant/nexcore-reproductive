@@ -1,0 +1,17 @@
+
+[package]
+name = "nexcore-reproductive"
+version = "1.0.0"
+edition = "2024"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+description = "Reproductive system for CI/CD — Gametes(build artifacts) + Fertilization(merge/test) + Trimester gates(validation phases) + Differentiation(env adaptation) + Birth(deployment)"
+
+[dependencies]
+nexcore-chrono = { workspace = true }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+
+[lints]
+workspace = true
